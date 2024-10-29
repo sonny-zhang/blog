@@ -52,25 +52,23 @@ const config: Config = {
       },
       hideOnScroll: true,
       items: [
-        // { label: '博客', position: 'right', to: 'blog' },
-        { label: '博客(整理中)', position: 'right', to: '/' },
-        // { label: '项目', position: 'right', to: 'project' },
-        { label: '项目(整理中)', position: 'right', to: '/' },
+        { label: '博客', position: 'right', to: 'blog' },
+        { label: '项目', position: 'right', to: 'project' },
         { label: '友链', position: 'right', to: 'friends' },
         { label: '关于', position: 'right', to: 'about' },
-        // {
-        //   label: '更多',
-        //   position: 'right',
-        //   items: [
-        //     { label: '归档', to: 'blog/archive' },
-        //     { label: '笔记', to: 'docs/skill' },
-        //     { label: '工具推荐', to: 'docs/tools' },
-        //   ],
-        // },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
+        {
+          label: '更多',
+          position: 'right',
+          items: [
+            { label: '归档', to: 'blog/archive' },
+            { label: '笔记', to: 'docs/skill' },
+            { label: '工具推荐', to: 'docs/tools' },
+          ],
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     footer: {
@@ -79,17 +77,10 @@ const config: Config = {
         {
           title: '学习',
           items: [
-            // { label: '博客', to: 'blog' },
-            // { label: '归档', to: 'blog/archive' },
-            // { label: '技术笔记', to: 'docs/skill' },
-            // { label: '实战项目', to: 'project' },
-            // { label: '前端示例', to: 'https://example.kuizuo.cn' },
-            { label: '博客(待整理)', to: '/' },
-            { label: '归档(待整理)', to: '/' },
-            { label: '技术笔记(待整理)', to: '/' },
-            { label: '实战项目(待整理)', to: '/' },
-            { label: '后端示例(待整理)', to: '/' },
-            { label: '前端示例(待整理)', to: '/' },
+            { label: '博客', to: 'blog' },
+            { label: '归档', to: 'blog/archive' },
+            { label: '技术笔记', to: 'docs/skill' },
+            { label: '实战项目', to: 'project' },
           ],
         },
         {
@@ -102,16 +93,6 @@ const config: Config = {
             // { label: 'Discord', href: social.discord.href },
           ],
         },
-        // {
-        //   title: '网站',
-        //   items: [
-        //     { label: 'js反混淆', to: 'https://js-deobfuscator.kuizuo.cn' },
-        //     { label: 'cyberChef', to: 'https://gchq.github.io/CyberChef' },
-        //     { label: 'api服务', to: 'https://api.kuizuo.cn' },
-        //     { label: '便民服务', to: 'https://service.kuizuo.cn' },
-        //     { label: '站点监控', to: 'https://uptime.kuizuo.cn' },
-        //   ],
-        // },
         {
           title: '更多',
           items: [
@@ -131,7 +112,7 @@ const config: Config = {
         <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${
           beian1.match(/\d+/)?.[0]
         }" >${beian1}</a></p>
-        <p>Copyright © 2020 - ${new Date().getFullYear()} kuizuo. | Built with Docusaurus.</p>
+        <p>Copyright © 2024 - ${new Date().getFullYear()} sonny. | Built with Docusaurus.</p>
         `,
     },
     algolia: {
@@ -157,10 +138,10 @@ const config: Config = {
       ],
     },
     giscus: {
-      repo: 'sonny-zhang/SonnyWork',
-      repoId: 'R_kgDONEewQw',
+      repo: 'sonny-zhang/blog',
+      repoId: 'R_kgDONFOYRA',
       category: 'General',
-      categoryId: 'DIC_kwDONEewQ84CjnAZ',
+      categoryId: 'DIC_kwDONFOYRM4CjpuL',
       theme: 'light',
       darkTheme: 'dark_dimmed',
     } satisfies Partial<GiscusConfig>,
@@ -228,7 +209,7 @@ const config: Config = {
       {
         path: 'blog',
         editUrl: ({ locale, blogDirPath, blogPath, permalink }) =>
-          `https://github.com/kuizuo/blog/edit/main/${blogDirPath}/${blogPath}`,
+          `https://github.com/sonny-zhang/blog/edit/main/${blogDirPath}/${blogPath}`,
         editLocalizedFiles: false,
         blogDescription: '代码人生：编织技术与生活的博客之旅',
         blogSidebarCount: 10,
@@ -267,7 +248,7 @@ const config: Config = {
                 innerHTML: `
     (${function () {
       console.log(
-        `%c Kz Blog %c https://github.com/kuizuo/blog`,
+        `%c Kz Blog %c https://github.com/sonny-zhang/blog`,
         'color: #fff; margin: 1em 0; padding: 5px 0; background: #12affa;',
         'margin: 1em 0; padding: 5px 0; background: #efefef;',
       )
