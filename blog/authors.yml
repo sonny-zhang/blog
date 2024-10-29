@@ -7,3 +7,13 @@ kuizuo:
   socials:
     x: kuizuo
     github: kuizuo
+
+sonny:
+  name: sonny
+  title: 全栈Python
+  url: https://github.com/sonny-zhnag
+  image_url: https:/sonnyzhang.com/img/logo.png
+  email: sonny.zhang80@gmail.com
+  socials:
+    x: sonnyzhang
+    github: sonny-zhang
