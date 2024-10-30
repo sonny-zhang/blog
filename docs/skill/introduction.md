@@ -22,4 +22,4 @@ keywords:
 - Vue
 - React
 - HTTP
-- 算法
+- Mac

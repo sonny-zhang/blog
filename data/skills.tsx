@@ -32,6 +32,7 @@ const SKILLS = [
   'figma',
   'python',
   'langchain',
+  'mac',
 ]
 
 export default SKILLS
