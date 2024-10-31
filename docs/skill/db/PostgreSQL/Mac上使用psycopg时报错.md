@@ -14,19 +14,19 @@ description: Mac上使用psycopg时报错
 ## 报错场景
 - 环境：我用Mac M1，postgresql安装在docker里
 
-报错信息
-![](http://sm7o8ia1r.hn-bkt.clouddn.com/skill/pgsql_import_error.jpg)   
+报错信息  
+<img src="http://sm7o8ia1r.hn-bkt.clouddn.com/skill/pgsql_import_error.jpg" width="90%"/>
 
 ## 检查1：package是否存在虚拟环境
 已经安装了psycopg==3.2.3，虚拟环境也能看到包，但是用Django做makemigrations提示找不到包  
 
 包是存在的
-![](http://sm7o8ia1r.hn-bkt.clouddn.com/skill/pgsql_import_error_check_package.jpg)
+<img src="http://sm7o8ia1r.hn-bkt.clouddn.com/skill/pgsql_import_error_check_package.jpg"/>
 
 - 推测：那就可能是无法连接pgsql的原因了
 - 搜索：谷歌搜索有人本地安装pgsql后，就正常了，所以怀疑本地没有安装pgsql客户端组建了导致无法调用
 - 搜索claude：确实如此，本地安装会包含客户端工具、服务端uz jianuzjian
-![](http://sm7o8ia1r.hn-bkt.clouddn.com/skill/20241101001053.png)
+<img src="http://sm7o8ia1r.hn-bkt.clouddn.com/skill/20241101001053.png" width="70%"/>
   
 ## 检查2：postgresql必须安装客户端工具
 
@@ -44,7 +44,7 @@ brew services stop postgresql
 ```bash
 psql -h localhost -p 5432 -U postgres
 ```
-![](http://sm7o8ia1r.hn-bkt.clouddn.com/skill/20241101001344.png)
+<img src="http://sm7o8ia1r.hn-bkt.clouddn.com/skill/20241101001344.png" width="70%"/>
 
 ## 总结
-python链接postgresql，除了保证package存在与环境下，还要安装客户端链接工具
+python链接postgresql，除了保证package存在与环境下，还要安装客户端链接工具也要存在本地  
