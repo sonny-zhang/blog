@@ -65,10 +65,10 @@ const config: Config = {
             { label: '工具推荐', to: 'docs/tools' },
           ],
         },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
