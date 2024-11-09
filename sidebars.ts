@@ -66,7 +66,7 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           link: {
             type: 'doc',
-            id: 'skill/vue/FastCrud/fast-crud-form',
+            id: 'skill/vue/FastCrud/fast-crud',
           },
           items: [
             {
