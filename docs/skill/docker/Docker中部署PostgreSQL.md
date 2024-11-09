@@ -14,8 +14,6 @@ description: Docker中部署PostgreSQL
 创建一个 docker-compose.yml 文件，内容如下：
 
 ```yaml
-yaml
-复制代码
 version: '3'
 services:
   postgres:
