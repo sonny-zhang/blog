@@ -4,8 +4,7 @@ import { themes } from 'prism-react-renderer'
 import social from './data/social'
 import type { GiscusConfig } from './src/components/Comment'
 
-const beian = 'xxxx'
-const beian1 = 'xxxx'
+const beian = '粤ICP备2024336373号'
 
 const config: Config = {
   title: 'Sonny程序员',
@@ -108,11 +107,10 @@ const config: Config = {
         },
       ],
       copyright: `
-        <p style="margin-bottom: 0;"><a href="http://beian.miit.gov.cn/">${beian}</a></p>
         <p style="display: inline-flex; align-items: center;"><img style="height:20px;margin-right: 0.5rem;" src="/img/police.png" alt="police" height="20"/><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${
-          beian1.match(/\d+/)?.[0]
-        }" >${beian1}</a></p>
-        <p>Copyright © 2024 - ${new Date().getFullYear()} sonny. | Built with Docusaurus.</p>
+          beian.match(/\d+/)?.[0]
+        }" >${beian}</a></p>
+        <p>Copyright © 2024 - ${new Date().getFullYear()} Sonny程序员 | Built with Docusaurus.</p>
         `,
     },
     algolia: {
