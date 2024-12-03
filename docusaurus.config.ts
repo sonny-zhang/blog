@@ -11,7 +11,6 @@ const config: Config = {
   url: 'https://sonnyzhang.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'sonny3o',
   projectName: 'blog',
   customFields: {
     bio: '道也，进乎技矣',
@@ -51,7 +50,6 @@ const config: Config = {
       },
       hideOnScroll: true,
       items: [
-        { label: '首页', position: 'right', to: '/' },
         { label: '程序员', position: 'right', to: 'docs/it' },
         { label: '美食', position: 'right', to: 'docs/delicacy' },
         { label: '装修', position: 'right', to: 'docs/decoration' },
@@ -79,7 +77,6 @@ const config: Config = {
         {
           title: '学习',
           items: [
-            { label: '首页', to: '/' },
             { label: '程序员', to: 'docs/it' },
             { label: '美食', to: 'docs/delicacy' },
             { label: '装修', to: 'docs/decoration' },
@@ -278,7 +275,14 @@ Love what you do and do what you love.
       tagName: 'meta',
       attributes: {
         name: 'description',
-        content: 'Sonny的个人博客',
+        content: 'Sonny程序员的个人网站',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: '7C765A17FD067EA9',
       },
     },
   ],
