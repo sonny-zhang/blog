@@ -12,9 +12,10 @@ const TITLE = '友链'
 const DESCRIPTION = '良师益友，胜却人间无数'
 const ADD_FRIEND_URL = 'https://github.com/sonny_zhang/blog/edit/main/data/friends.tsx'
 const SITE_INFO = `
-title: 'Sonny程序员'
+title: 'Sonny程序员|私厨|装修'
 description: '道也，进乎技矣'
 website: 'https://sonnyzhang.com'
+avatar: 'https://sonnyzhang.com/img/logo.png'
 `
 const friends = Friends
 

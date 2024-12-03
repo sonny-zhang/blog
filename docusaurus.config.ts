@@ -27,7 +27,7 @@ const config: Config = {
     metadata: [
       {
         name: 'author',
-        content: 'Sonny',
+        content: 'Sonny程序员',
       },
       {
         name: 'keywords',
@@ -51,19 +51,22 @@ const config: Config = {
       },
       hideOnScroll: true,
       items: [
-        { label: '博客', position: 'right', to: 'blog' },
-        { label: '项目', position: 'right', to: 'project' },
+        { label: '首页', position: 'right', to: '/' },
+        { label: '程序员', position: 'right', to: 'docs/it' },
+        { label: '美食', position: 'right', to: 'docs/delicacy' },
+        { label: '装修', position: 'right', to: 'docs/decoration' },
+        { label: '实战项目', position: 'right', to: 'project' },
         { label: '友链', position: 'right', to: 'friends' },
         { label: '关于', position: 'right', to: 'about' },
-        {
-          label: '更多',
-          position: 'right',
-          items: [
-            { label: '归档', to: 'blog/archive' },
-            { label: '笔记', to: 'docs/skill' },
-            { label: '工具推荐', to: 'docs/tools' },
-          ],
-        },
+        // {
+        //   label: '更多',
+        //   position: 'right',
+        //   items: [
+        //     { label: '归档', to: 'blog/archive' },
+        //     { label: '笔记', to: 'docs/skill' },
+        //     { label: '工具推荐', to: 'docs/tools' },
+        //   ],
+        // },
         // {
         //   type: 'localeDropdown',
         //   position: 'right',
@@ -76,9 +79,10 @@ const config: Config = {
         {
           title: '学习',
           items: [
-            { label: '博客', to: 'blog' },
-            { label: '归档', to: 'blog/archive' },
-            { label: '技术笔记', to: 'docs/skill' },
+            { label: '首页', to: '/' },
+            { label: '程序员', to: 'docs/it' },
+            { label: '美食', to: 'docs/delicacy' },
+            { label: '装修', to: 'docs/decoration' },
             { label: '实战项目', to: 'project' },
           ],
         },
@@ -114,9 +118,9 @@ const config: Config = {
         `,
     },
     algolia: {
-      appId: 'GV6YN1ODMO',
-      apiKey: '50303937b0e4630bec4a20a14e3b7872',
-      indexName: 'sonny',
+      appId: 'F4E2HI7819',
+      apiKey: '7dc5daa5a3a202729a2b5104001dda3b',
+      indexName: 'blog',
     },
     prism: {
       theme: themes.oneLight,
